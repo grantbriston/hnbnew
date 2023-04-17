@@ -7,16 +7,18 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
 
-  const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
-  const account = [
-    "My Account",
-    "My Orders",
-    "My Subscribe & Save",
-    "My Recommendations",
-    "My Favourites",
-    "My Saved Articles",
-    "Rewards for Life",
-    "Sign Out",
+  const navigation = [
+    "Vitamins & Supplements",
+    "Food & Drink",
+    "Sports Nutrition",
+    "Gut Health Hub",
+    "Beauty",
+    "CBD",
+    "Weight Management",
+    "Offers",
+    "Wellness Needs",
+    "Outlet",
+    "The Health Hub",
   ];
 
   useEffect(() => {
@@ -230,18 +232,12 @@ export default function Navbar() {
                             </a>
                           </Link>
                         ))}
-                        <Link href="/">
-                          <a className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
-                            Get Started
-                          </a>
-                        </Link>
                       </>
                     </Disclosure.Panel>
                   </div>
                 </>
               )}
             </Disclosure>
-            {/* menu  */}
             <div className="hidden text-center lg:flex lg:items-center">
               <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex"></ul>
             </div>
