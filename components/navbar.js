@@ -74,7 +74,6 @@ export default function Navbar() {
                         name="query"
                         className="bg-white w-full	"
                         placeholder="Search products, brands, articles"
-                        value=""
                       />
                       <button type="submit" disabled="">
                         <svg
@@ -227,7 +226,12 @@ export default function Navbar() {
                       <>
                         {navigation.map((item, index) => (
                           <Link key={index} href="/">
-                            <a className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
+                            <a
+                              style={{
+                                color: !isScrolled ? "white" : "#00594c",
+                              }}
+                              className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700"
+                            >
                               {item}
                             </a>
                           </Link>
