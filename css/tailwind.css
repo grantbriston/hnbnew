@@ -7,4 +7,41 @@
   body {
     @apply dark:bg-trueGray-900;
   }
+
+  .menu__green {
+    filter: brightness(0) saturate(100%) invert(27%) sepia(11%) saturate(4361%)
+      hue-rotate(129deg) brightness(94%) contrast(101%);
+  }
+
+  .menu__white {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(16%)
+      hue-rotate(137deg) brightness(106%) contrast(104%);
+  }
+
+  .login__tooltip::before {
+    content: "";
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    border-right: solid 10px transparent;
+    border-left: solid 10px transparent;
+    border-bottom: solid 10px white;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
+  }
+
+  .login__tooltip {
+    position: absolute;
+    top: 75px;
+    width: 300px;
+    background: white;
+    padding: 1rem 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    box-shadow: 3px 4px 6px rgb(0 0 0 / 40%);
+  }
 }

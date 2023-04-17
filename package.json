@@ -24,6 +24,8 @@
     "autoprefixer": "^10.0.4",
     "babel-plugin-macros": "^3.1.0",
     "babel-plugin-twin": "^1.0.2",
+    "eslint": "8.38.0",
+    "eslint-config-next": "13.3.0",
     "postcss": "^8.1.10",
     "tailwindcss": "^2.2.2",
     "twin.macro": "^2.5.0"
